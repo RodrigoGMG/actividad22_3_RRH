@@ -37,7 +37,7 @@ El repositorio y los sitios web se crean en la cuenta de **Gonzalo**. Los demás
    - URL: [https://github.com/Rimsha-Iqbal/actividad22_3_RRH/](https://github.com/Rimsha-Iqbal/actividad22_3_RRH/)
 
 2. **Sitio en ClouFlare Pages**  
-   - URL: [Link de cloudflare](https://cuenta_leonor_github.github.io/actividad22_3_AGL/)
+   - URL: [https://actividad22-3-rrh.pages.dev/](https://actividad22-3-rrh.pages.dev/)
 
 
 El repositorio y los sitios web se crean en la cuenta de **Rodrigo**. Los demás miembros del grupo participan como colaboradores.
