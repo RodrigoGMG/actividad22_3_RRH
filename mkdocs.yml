@@ -3,7 +3,7 @@ site_url: https://activida3.iaw
 nav:
   - HOME: Index.md
   - Hugo_anakle: Hugo_anakle.md
-  - Hugo_ll:  Hugo_walden.md
+  - Hugo_walden:  Hugo_walden.md
   - MKDOCS: mkdocs.md
 
 theme:
