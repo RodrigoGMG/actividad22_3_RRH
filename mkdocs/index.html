@@ -1,0 +1,999 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://activida3.iaw/mkdocs/">
+      
+      
+        <link rel="prev" href="../Hugo_walden/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>MKDOCS - Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#indice" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS" class="md-header__button md-logo" aria-label="Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MKDOCS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS" class="md-nav__button md-logo" aria-label="Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HOME
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hugo_anakle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hugo_anakle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hugo_walden/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hugo_walden
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MKDOCS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    MKDOCS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción a MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Previos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Previos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-del-paquete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualización del paquete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-python-y-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Python Y pip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-modulo-gestor-de-entornos-virtuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación módulo gestor de entornos virtuales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-nuevo-entorno-virtual-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de un nuevo entorno virtual de Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-mkdoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de MkDoc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobaciones-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobaciones Iniciales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-git-hub-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de Git Hub repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-sitio-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de sitio MKDOCS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-en-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración en "mkdocs.yml"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servidor-local-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servidor local de Desarrollo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#construccion-y-publicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Construcción y Publicación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-rama-gh-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de rama gh-pages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#construccion-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Construcción del Sitio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subir-tema-en-el-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subir tema en el GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publicacion-en-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publicación en GitHub Pages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publicacion-en-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publicación en CloudFlare
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Publicación en CloudFlare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-un-dominio-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar un Dominio Personalizado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción a MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Previos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Previos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-del-paquete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualización del paquete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-python-y-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Python Y pip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-modulo-gestor-de-entornos-virtuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación módulo gestor de entornos virtuales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-nuevo-entorno-virtual-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de un nuevo entorno virtual de Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-mkdoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de MkDoc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobaciones-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobaciones Iniciales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-git-hub-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de Git Hub repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-sitio-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de sitio MKDOCS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-en-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración en "mkdocs.yml"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servidor-local-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servidor local de Desarrollo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#construccion-y-publicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Construcción y Publicación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-rama-gh-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de rama gh-pages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#construccion-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Construcción del Sitio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subir-tema-en-el-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subir tema en el GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publicacion-en-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publicación en GitHub Pages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publicacion-en-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publicación en CloudFlare
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Publicación en CloudFlare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-un-dominio-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar un Dominio Personalizado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>MKDOCS</h1>
+
+<h2 id="indice">Índice</h2>
+<ul>
+<li><a href="#índice">Índice</a></li>
+<li><a href="#introducción-a-mkdocs">Introducción a MkDocs</a></li>
+<li><a href="#requisitos-previos">Requisitos Previos</a></li>
+<li><a href="#actualización-del-paquete">Actualización del paquete</a></li>
+<li><a href="#instalación-de-git">Instalación de git</a></li>
+<li><a href="#instalación-de-python-y-pip">Instalación de Python Y pip</a></li>
+<li><a href="#instalación-módulo-gestor-de-entornos-virtuales">Instalación módulo gestor de entornos virtuales</a></li>
+<li><a href="#creación-de-un-nuevo-entorno-virtual-de-python">Creación de un nuevo entorno virtual de Python</a></li>
+<li><a href="#instalación-de-mkdoc">Instalación de MkDoc</a></li>
+<li><a href="#comprobaciones-iniciales">Comprobaciones Iniciales</a></li>
+<li><a href="#creación-de-git-hub-repository">Creación de Git Hub repository</a></li>
+<li><a href="#creación-de-sitio-mkdocs">Creación de sitio MKDOCS</a></li>
+<li><a href="#configuración-en-mkdocsyml">Configuración en "mkdocs.yml"</a></li>
+<li><a href="#servidor-local-de-desarrollo">Servidor local de Desarrollo</a></li>
+<li><a href="#construcción-y-publicación">Construcción y Publicación</a></li>
+<li><a href="#creación-de-rama-gh-pages">Creación de rama gh-pages</a></li>
+<li><a href="#construcción-del-sitio">Construcción del Sitio</a></li>
+<li><a href="#subir-tema-en-el-github">Subir tema en el GitHub</a></li>
+<li><a href="#publicación-en-github-pages">Publicación en GitHub Pages</a></li>
+<li><a href="#publicación-en-cloudflare">Publicación en CloudFlare</a></li>
+<li><a href="#configurar-un-dominio-personalizado">Configurar un Dominio Personalizado</a></li>
+</ul>
+<h2 id="introduccion-a-mkdocs">Introducción a MkDocs</h2>
+<p><a href="https://www.mkdocs.org/"><strong>MkDocs</strong></a> es una herramienta rápida y sencilla para crear documentación estática con Markdown. Es ideal para desarrolladores que deseen documentar sus proyectos.</p>
+<h2 id="requisitos-previos">Requisitos Previos</h2>
+<h3 id="actualizacion-del-paquete">Actualización del paquete</h3>
+<ul>
+<li>Iniciamos sesion como administrador.  </li>
+<li>Antes de instalar algo actualizamos paquetes de Debian 12.   </li>
+<li>Usamos el comando "apt update -y"</li>
+<li></li>
+</ul>
+<h3 id="instalacion-de-git">Instalación de git</h3>
+<p>Con el comando "apt install git" Instalamos git en nuestra máquina
+de <strong>Debian 12</strong>.</p>
+<h3 id="instalacion-de-python-y-pip">Instalación de Python Y pip</h3>
+<p>Para instalar temas de tercero es necesario que instalamos paquete de Python y pip. 
+- Con el comando "apt install python3" Instalamos una versión reciente de python3.<br />
+- Con el comando "apt install python3-dev python3-pip" Instalamos <strong>pip</strong> es es gestor de paquetes de Python.</p>
+<h3 id="instalacion-modulo-gestor-de-entornos-virtuales">Instalación módulo gestor de entornos virtuales</h3>
+<ul>
+<li>Con el comando "apt install python3.11-venv" instalamos el módulo gestor de entornos virtuales.</li>
+</ul>
+<h3 id="creacion-de-un-nuevo-entorno-virtual-de-python">Creación de un nuevo entorno virtual de Python</h3>
+<p>Python necesita un directorio específico donde ubicar todos su software y librería (entorno virtual). Para crear y activar este entorno virtual los pasos son:<br />
+- Vamos a nuestro directorio de usuario cond "cd /home/usuario"
+- Aquí crearemos un directorio con nuestro entorno de Python.
+- Con "python3 -m venv my-env" creamos una carpeta llamada my-env con todos el software y librerías de python.
+- Con el comando "source my-env/bin/activate" activamos entorno.
+- <strong>Nota:</strong> Para salir del entorno ejecuta: deactivate</p>
+<h2 id="instalacion-de-mkdoc">Instalación de MkDoc</h2>
+<ul>
+<li>Con el comando "pip3 install mkdocs" instalamos MKDOCS.  </li>
+</ul>
+<h2 id="comprobaciones-iniciales">Comprobaciones Iniciales</h2>
+<ul>
+<li>Para moestrar la versión de Python 3 que está instalado actualmente en nuestro sistema ejecutamos el comando <strong>"python3 - -version"</strong>.  </li>
+<li>El comando <strong>"pip3 - -version"</strong> uuestra la versión instalada de pip, el gestor de paquetes de Python, y la versión de Python con la que está asociada.</li>
+<li>Con el comando <strong>"pip3 install requests"</strong> Instalamos la biblioteca requests, que es una de las más utilizadas en Python para realizar solicitudes HTTP.</li>
+<li>El comando <strong>"pip3 list"</strong> ista todos los paquetes de Python instalados en el entorno actual junto con sus versiones.</li>
+<li>Con el comando <strong>"pip3 freeze"</strong>  muestramos todos los paquetes de Python instalados en un formato adecuado para un archivo requirements.txt.</li>
+<li>Con el comando <strong>"mkdocs --version"</strong> muestramos la versión instalada de MkDocs, confirmando que está presente en el entorno.</li>
+</ul>
+<h2 id="creacion-de-git-hub-repository">Creación de Git Hub repository</h2>
+<ul>
+<li>En la cuenta de GitHub creamos un repositorio llamado <strong>"actividad22_3_RRH"</strong> Sin fichero de fichero de README.</li>
+</ul>
+<h2 id="creacion-de-sitio-mkdocs">Creación de sitio MKDOCS</h2>
+<ul>
+<li>Con <strong>"mkdocs new actividad22_3_RRH"</strong> Creamos nuestro sitio MKDCOS llamado <strong>"actividad22_3_RRH"</strong>.</li>
+<li>Vamos a este diretorio con <strong>"cd actividad22_3_RRH"</strong>.</li>
+<li>Con el comando "git init" creamos el directorio como repositorio local.</li>
+<li>Luego con <strong>"git remote add origin url-github-repo"</strong> creamos una conexión remota con github repositorio.</li>
+</ul>
+<h2 id="configuracion-en-mkdocsyml">Configuración en "mkdocs.yml"</h2>
+<ul>
+<li>En el directorio de <strong>"actividad22_3_RRH"</strong> con el comando <strong>"ls"</strong> listamos todos los el contenido del sitio <strong>actividad22_3_RRHH</strong>.</li>
+<li>Con <strong>nano makdocs.yml</strong> abrimos y fichero mkdocs.yml. Este es el fichero de configuración de sitio mkdocs.</li>
+<li>Dentro de este fichero Ponemos nombre de nuestro sitio <strong>(site_name:)</strong>.</li>
+<li>ponemos url del sitio <strong>(site_url:)</strong>.</li>
+<li>Luego creamos un secsión de nav <strong>(nav:)</strong>.</li>
+<li>En nav ponemos nombres de las paginas y sus ficheros.</li>
+<li>En mi caso you tengo las siguientes paginas:</li>
+<li>HOME</li>
+<li>Hugo_anakle (página creado por Rodrigo)</li>
+<li>Hugo_walden (página creado por Hafsa)</li>
+<li>MKDOCS (página creado por Rimsha)</li>
+<li>Luego aqui pongo tema de mi sitio <strong>(Theme: material)</strong>.</li>
+<li>También establecemos una esquema de color, logo y copyright.</li>
+</ul>
+<h2 id="servidor-local-de-desarrollo">Servidor local de Desarrollo</h2>
+<ul>
+<li>Iniciamos un servidor local con el comando <strong>"mkdocs serve"</strong>.</li>
+<li>Y visitamos el sitio desde el navegador.</li>
+</ul>
+<h2 id="construccion-y-publicacion">Construcción y Publicación</h2>
+<ul>
+<li>El comando <strong>"mkdocs build</strong> Construye el sitio estático (formado por html, css y javascript) y lo almacena en un directorio llamado: <strong>site.</strong></li>
+</ul>
+<h2 id="creacion-de-rama-gh-pages">Creación de rama gh-pages</h2>
+<ul>
+<li>Con el comando "mkdocs gh-deploy" creamos una nueva rama llamada gh-pages en el 
+repositorio local donde almacena el sitio web y lo despliega en GitHub 
+Pages.</li>
+</ul>
+<h2 id="construccion-del-sitio">Construcción del Sitio</h2>
+<ul>
+<li>En el directorio <strong>"actividad22_3_RRH"</strong> Cambiamos la rama con **"git checkout gh-pages".</li>
+<li>Aquí Creamos los  fichero markdown de nuestro sitio web (HOME, Hugo_anakle, Hugo_walden, MKDOCS).</li>
+</ul>
+<h2 id="subir-tema-en-el-github">Subir tema en el GitHub</h2>
+<ul>
+<li>Con el commando <strong>"git add ."</strong> subimos los cambios al repositorio local.</li>
+<li>Con <strong>git commit -m "mensjae"</strong> guardamos los cambios en el historial del repositorio local.</li>
+<li>Con <strong>"git push origin gh-pages"</strong> subimos los cambios al repositorio remota en git hub.</li>
+</ul>
+<h2 id="publicacion-en-github-pages">Publicación en GitHub Pages</h2>
+<ul>
+<li>Abrimos el rpositorio y vamos a <strong>settings</strong>.</li>
+<li>Luego Vamos a pages.</li>
+<li>Aquí en el Sección de <strong>"Build and Deployment"</strong> seleccionamso "Deploy from branch" y seleccionamos la rama <strong>"gh-pages"</strong> del carpeta <strong>"root"</strong>.</li>
+<li>En <strong>Actions</strong> cuano el proceso de desplegar el sitio es completo puede visitar el sitio.</li>
+</ul>
+<h2 id="publicacion-en-cloudflare">Publicación en CloudFlare</h2>
+<ul>
+<li>Iniciamos sesión en el cuenta de CloudFlare.</li>
+<li>Vamos a la sección <strong>Pages</strong> desde el panel de control.</li>
+<li>Hacemos clic en <strong>Create a project</strong>.</li>
+</ul>
+<h3 id="configurar-un-dominio-personalizado">Configurar un Dominio Personalizado</h3>
+<ul>
+<li>Aquí en la sección <strong>Pages</strong>, seleccionamos repositorio de <strong>·actividad22_3_RRH"</strong>.</li>
+<li>Luego desplegamos este sitio web utilizando url que ha generado CloudFlare.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Hugo_walden/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hugo_walden">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Hugo_walden
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 RRH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
