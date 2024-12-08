@@ -7,40 +7,57 @@ Este documento describe la organización y las URLs asociadas con las tareas del
 ## **Tarea 1: Sitio en HUGO**
 ### Propietario: **Rodrigo Gómez Marín**
 
-1. **Repositorio en GitHub**  
-   - URL: [https://github.com/RodrigoGMG/actividad22_1_RRH/](https://github.com/RodrigoGMG/actividad22_1_RRH/)
+- **Repositorio en GitHub**  
 
-2. **Sitio en Netlify**  
-   - URL: [netlify link](https://actividad22_1_AGL.netlify.app/)
+   [GitHub Repositorio](https://github.com/RodrigoGMG/actividad22_1_RRH/)
 
-El repositorio y los sitios web se crean en la cuenta de **Ana**. Los demás miembros del grupo participan como colaboradores.
+- **Sitio en GitHub pages**  
+
+   [GitHub pages](https://rodrigogmg.github.io/actividad22_1_RRH/)
+
+- **Sitio en Netlify**  
+   [netlify](https://actividad22-1-rrh.netlify.app/)
+
+El repositorio y los sitios web se crean en la cuenta de **Rodrigo**. Los demás miembros del grupo participan como colaboradores.
 
 ---
 
 ## **Tarea 2: Sitio en HUGO**
 ### Propietario: **Hafsa Katkout Aabil**
 
-1. **Repositorio en GitHub**  
-   - URL: [https://github.com/Hafsa-Katkout/actividad22_2_RRH/](https://github.com/Hafsa-Katkout/actividad22_2_RRH/)
+- **Repositorio en GitHub**  
 
-2. **Sitio en Cloudflare Pages**  
-   - URL: [CloudFlare link](https://actividad22_2_AGL.pages.dev/)
+   [GitHub Repositorio](https://github.com/Hafsa-Katkout/actividad22_2_RRH/)
 
-El repositorio y los sitios web se crean en la cuenta de **Gonzalo**. Los demás miembros del grupo participan como colaboradores.
+- **Sitio en GitHub pages**  
+
+   [GitHub pages]()
+
+- **Sitio en Cloudflare Pages**   
+
+   [CloudFlare](https://actividad22_2_AGL.pages.dev/)
+
+El repositorio y los sitios web se crean en la cuenta de **Hafsa**. Los demás miembros del grupo participan como colaboradores.
 
 ---
 
 ## **Tarea 3: Sitio en MKDOCS**
 ### Propietaria: **Rimsha Iqbal**
 
-1. **Repositorio en GitHub**  
-   - URL: [https://github.com/Rimsha-Iqbal/actividad22_3_RRH/](https://github.com/Rimsha-Iqbal/actividad22_3_RRH/)
+- **Repositorio en GitHub**   
 
-2. **Sitio en ClouFlare Pages**  
-   - URL: [https://actividad22-3-rrh.pages.dev/](https://actividad22-3-rrh.pages.dev/)
+   [GitHub Repositorio](https://github.com/Rimsha-Iqbal/actividad22_3_RRH/)
+
+- **Sitio en GitHub pages**  
+
+   [GitHub pages](https://rimsha-iqbal.github.io/actividad22_3_RRH/)
+
+- **Sitio en ClouFlare Pages**   
+
+   [CloudFlare](https://actividad22-3-rrh.pages.dev/)
 
 
-El repositorio y los sitios web se crean en la cuenta de **Rodrigo**. Los demás miembros del grupo participan como colaboradores.
+El repositorio y los sitios web se crean en la cuenta de **Rimsha**. Los demás miembros del grupo participan como colaboradores.
 
 ---
 
